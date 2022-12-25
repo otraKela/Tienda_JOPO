@@ -1,0 +1,25 @@
+main {
+    margin-top: 20px;
+}
+    
+ul {
+    margin-top: 0;
+    padding-left: 20%;
+    list-style: none;
+    text-align: left;
+    color: black;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+h1 {
+    padding: 0 20%;
+
+}
+
+#titulo2 {
+    margin-top: 40px;
+}

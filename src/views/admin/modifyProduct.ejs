@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+        <%- include ('../partials/headAdmin.ejs') %>
+    
+        <link href="/css/productAdmin.css", rel="stylesheet">
+        
+    
+    </head>
+
+    <body>
+
+        <%- include ('../partials/headerAdmin.ejs') %>
+
+        <main>
+            <h1>Modificar producto: <%= product.name %></h1>
+
+            <form action="/admin/<%= product.id %>?_method=PUT" method="POST" class="form-producto" enctype="multipart/form-data">
+
+                <div class="div-datos-producto">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" value="<%= product.name %>">
+                    <p class="name-error validation-error">
+                        <%= locals.errors && errors.name? errors.name.msg:null %> 
+                    </p>
+                 </div>
+                
+                <div class="div-datos-producto">
+                    <label for="description">Descripción:</label>
+                    <textarea name="description" id="description"><%= product.description %></textarea>
+                    <p class="description-error validation-error">
+                        <%= locals.errors && errors.description? errors.description.msg:null %> 
+                    </p>                  
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="category">Categoría:</label>
+                    <select name="category_id" id="category-id" >
+
+                        <% categories.forEach (category => { %> 
+                            <option value="<%= category.id %>" 
+                                <%= product.category_id == category.id ? 'selected':null %>
+                                ><%= category.name.toUpperCase() %></option>
+                        <% }) %>
+
+                    </select>
+                    <p class="category-id-error validation-error">
+                        <%= locals.errors && errors.category? errors.category.msg:null %> 
+                    </p>
+                </div>
+
+                <div class="colors-checkbox">
+                    <p class="colors-label">Colores:</p>
+                    
+                    <div class="color-list">
+                        <% colors.forEach (color => { %> 
+                        <label for="colors">
+                            <input type="checkbox" name="colors" class="colors" 
+                            value="<%= color.id %>"
+                            <% if (product.colors) { product.colors.forEach (productColor => { %>
+                              <%= color.id == productColor.id ? 'checked' : null %> 
+                            <% })} %> >
+                            <%= color.name %>
+                            
+                        </label>
+                        <% }) %>
+                    </div>
+                    <p class="colors-error validation-error">
+                        <%= locals.errors && errors.colors? errors.colors.msg:null %> 
+                    </p>
+                </div>
+
+                
+                <!-- <div class="div-datos-producto">
+                    <label for="color">Color:</label>
+                    <select name="color_id" id="color_id">
+                        <% colors.forEach (color => { %> 
+                        <option value="<%= color.id %>" 
+                            <%= product.color_id == color.id? 'selected':null %> 
+                            ><%= color.name.toUpperCase() %>
+                        </option>
+                        <% }) %>
+                    </select>
+                </div> -->
+                
+               <div class="div-datos-producto">
+                    <label>Precio:</label>
+                    <input type="number" name="price" id="price"  value="<%= product.price %>">
+                    <p class="price-error validation-error">
+                        <%= locals.errors && errors.price? errors.price.msg:null %> 
+                    </p>
+                </div>
+                </div>
+
+                <div class="div-datos-producto">
+                    <label>Descuento:</label>
+                    <input type="number" name="discount" id="discount"  value="<%= product.discount %>">
+                    <p class="discount-error validation-error">
+                        <%= locals.errors && errors.discount? errors.discount.msg:null %> 
+                    </p>
+                </div>
+
+                <div class="div-datos-producto">
+                    <label>Imagen:</label>
+                    <p class="nombre-imagen"><%= product.img %></p>
+                    <input type="file" name="img" id="img" class="input-archivo" accept=".jpg, .jpeg, .png, .gif" >
+                    <p class="img-error validation-error">
+                        <%= locals && locals.imgError? imgError:null %> 
+                    </p>
+                </div>
+                
+                <div class="div-destacado">
+                    <label for="special">Producto destacado</label>
+                    <input type="checkbox" name="special" id="special" class="input-destacado" 
+                        <%= product.special ? 'checked':null %> >
+                </div>  
+                
+                <%- include ('../partials/productFormButtons.ejs')  %>
+                                   
+            </form>
+
+
+        </main>
+        
+<script src="../../../js/productValidation.js" type="text/javascript"></script>
+        
+    
+    </body>
+    </html>
+
+
+ 

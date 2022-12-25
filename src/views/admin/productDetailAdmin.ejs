@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include ('../partials/headAdmin.ejs') %>
+
+    <link href="/css/productDetailAdmin.css", rel="stylesheet">
+    
+
+</head>    
+
+<body>
+
+    <%- include ('../partials/headerAdmin.ejs') %>
+    
+
+    <main>
+
+        <article class="article-producto">
+
+            <div class="div-producto">
+
+                <div class="div-img-producto">
+                    <img src="<%= product.img %>" alt="telefono-8">
+                </div>
+
+                <div class="div-datos-producto">
+
+                    <h4 class="h4-nombre-producto"><%= product.name %></h4>
+
+                    <% if (product.discount != 0 && product.discount != null) { %>
+
+                        <div class="div-precio-con-descuento">
+
+                            <p class="p-precio"><small>ANTES </small>$<%= toThousand(product.price) %></p>
+                            <p class="p-descuento"><%= product.discount %>% <small>de </small>DESCUENTO</p>
+                            <h5 class="p-precio-final">$<%= toThousand (product.price * (1 - product.discount / 100)) %></h5>
+
+                        </div>
+
+                    <% } else { %>
+
+                        <h5 class="p-precio-final">$<%= toThousand (product.price) %></h5> 
+                        
+                    <% } %>
+
+                    <div class="div-formas-pago">
+
+                        <i class="fa-solid fa-credit-card i-tarjeta"></i>
+                        <span><strong>6 cuotas sin interés</strong> de $<%= (product.price / 6).toFixed(2) %></span>
+
+                    </div>
+
+                    <div class="div-descripcion-producto">
+
+                        <p><%= product.description %></p>
+
+                    </div>
+                </div> 
+
+            </div>   
+
+            <div class="div-botones">
+                
+                <input id="check" type="checkbox">
+                <label id="delete-open" for="check">
+                <p class="action-button delete">ELIMINAR</p>
+                </label>
+                
+                <input id="check" type="checkbox">
+                <form class="delete-form" action="/admin/delete/<%= product.id %>?_method=DELETE" method="POST">
+                        <p>¿Estás seguro que querés eliminar este producto?</p>
+                        <button type="submit" class="action-button delete form">ACEPTAR</button>
+                    <label id="delete-open" for="check">
+                        <p class="action-button delete form">CANCELAR</p>
+                    </label>
+                </form>
+
+                <div class="boton-edit">
+                <a href="/admin/edit/<%= product.id %>" class="action-button edit">EDITAR</a>
+                </div>
+
+            </div>
+
+
+        </article>
+   
+    </main>
+
+    
+</body>
+</html>

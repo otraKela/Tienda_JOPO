@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+        <%- include ('../partials/headAdmin.ejs') %>
+    
+        <link href="/css/productAdmin.css", rel="stylesheet">
+        
+    
+    </head>
+
+    <body>
+
+        <%- include ('../partials/headerAdmin.ejs') %>
+
+        <main>
+            <h1>Modificar producto: <%= productFind.name %></h1>
+
+            <form action="/admin/<%= productFind.id %>?_method=PUT" method="POST" class="form-producto" enctype="multipart/form-data">
+
+                <div class="div-datos-producto">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" value="<%= productFind.name %>">
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="description">Descripción:</label>
+                    <input name="description" id="description" maxlength="300" value="<%= productFind.description %>">
+                   
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="category">Categoría:</label>
+                    <select name="category_id" id="category_id" required>
+
+                        <% categories.forEach (category => { %> 
+                            <option value="<%= category.id %>" 
+                                <%= productFind.category_id == category.id ? 'selected':null %>
+                                ><%= category.name.toUpperCase() %></option>
+                        <% }) %>
+
+                    </select>
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="color">Color:</label>
+                    <select name="color_id" id="color_id">
+                        <% colors.forEach (color => { %> 
+                        <option value="<%= color.id %>" 
+                            <%= productFind.color_id == color.id? 'selected':null %> 
+                            ><%= color.name.toUpperCase() %>
+                        </option>
+                        <% }) %>
+                    </select>
+                </div>
+                
+               <div class="div-datos-producto">
+                    <label>Precio:</label>
+                    <input type="number" name="price" id="price"  value="<%= productFind.price %>">
+                </div>
+
+                <div class="div-datos-producto">
+                    <label>Descuento:</label>
+                    <input type="number" name="discount" id="discount"  value="<%= productFind.discount %>">
+                </div>
+
+                <div class="div-datos-producto">
+                    <label>Imagen:</label>
+                    <p class="nombre-imagen"><%= productFind.img %></p>
+                    <input type="file" name="img" id="img" accept=".jpg, .png" class="input-archivo" >
+                </div>
+                
+                <div class="div-destacado">
+                    <label for="special">Producto destacado</label>
+                    <input type="checkbox" name="special" id="special" class="input-destacado" 
+                        <%= productFind.special && productFind.special == 1? 'checked':null %>
+                </div>  
+                
+                <div class="div-botones">
+
+                    <button type="reset" class="button-reset">BORRAR</button>
+                
+                    <button type="submit" class="button-submit">GUARDAR</button>
+                </div>
+                                   
+            </form>
+
+
+        </main>
+        
+    
+    </body>
+    </html>
+
+
+ 

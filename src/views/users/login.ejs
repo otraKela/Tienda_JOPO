@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+    <link href="/css/login.css" , rel="stylesheet">
+    <script src="../../../js/userLogin.js"></script>
+
+
+    </head>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+            <main>
+                <form action="/users/login" method="POST" class="formulario">
+                    <input class="mensaje" value="<%= locals.msg? locals.msg:null %>">
+
+                    <div class="form-control">
+                        <label>Email </label>
+
+                        <input type="email" name="email" id="email" class="input-login"
+                            value="<%= locals.errors && errors.old ? errors.old.email : null%>">
+                        <p class="email-error"></p>
+                        <% if (locals.errors && errors.email) { %>
+                            <p class="email-error">
+                                <%=errors.email.msg %>
+                            </p>
+                            <% } %>
+                    </div>
+                    <div class="form-control">
+                        <label>Contraseña </label>
+                        <input type="password" name="password" id="password" class="input-login">
+                        <p class="password-error"></p>
+                        <% if (locals.errors && errors.password) { %>
+                            <p class="password-error">
+                                <%= errors.password.msg %>
+                            </p>
+                            <% } %>
+
+                                <div class="small-letter">
+                                    <label for="remember_user" class="remember-me">
+                                        <input type="checkbox" name="remember_user">Recordarme
+                                    </label>
+                                </div>
+
+                                <a href="#" class="a-password">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <div class="form-final-login">
+                        <button class="button-inicio">INICIAR SESIÓN</button>
+                        <p>¿No tenés cuenta aún?</p>
+                        <div class="enlace-registro">
+                            <a href='/users/registro'>Crear cuenta</a>
+                        </div>
+                    </div>
+
+                </form>
+            </main>
+            <%- include('../partials/footer.ejs') %>
+
+
+    </body>
+
+</html>

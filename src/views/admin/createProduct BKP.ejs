@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+        <%- include ('../partials/headAdmin.ejs') %>
+    
+        <link href="/css/productAdmin.css", rel="stylesheet">
+        
+    
+    </head>
+
+    <body>
+
+        <%- include ('../partials/headerAdmin.ejs') %>
+
+        <main>
+            <h1>Nuevo producto</h1>
+
+            <form action="/admin/createProduct" method="POST" class="form-producto" enctype="multipart/form-data">
+                
+                <div class="div-datos-producto">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" required >
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="description">Descripción:</label>
+                    <textarea name="description" id="description" required maxlength="300"></textarea>
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="category">Categoría:</label>
+                    <select name="category_id" id="category_id" required>
+                        <option value="">Elija una categoría</option>
+                        <% categories.forEach (category => { %> 
+                            <option value="<%= category.id %>"><%= category.name.toUpperCase() %></option>
+                        <% }) %>
+                    </select>
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="color">Color:</label>
+                    <select name="color_id" id="color_id">
+                        <option value "">Elija un color</option>>
+                        <% colors.forEach (color => { %> 
+                        <option value="<%= color.id %>" 
+                            ><%= color.name.toUpperCase() %>
+                        </option>
+                        <% }) %>
+                    </select>
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="price" >Precio:</label>
+                    <input type="number" name="price" id="price" required>
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="discount">Descuento:</label>
+                    <input type="number" name="discount" id="discount" >
+                </div>
+                
+                <div class="div-datos-producto">
+                    <label for="img">Imagen:</label>
+                    <input type="file" name="img" id="img" accept=".jpg, .png" class="input-archivo" required>
+                </div>  
+                
+                <div class="div-destacado">
+                    <label for="special">Producto destacado</label>
+                    <input type="checkbox" name="special" id="special" class="input-destacado" >
+                </div>  
+                
+                                               
+                <%- include ('../partials/productFormButtons.ejs')  %>
+
+            </form>
+        </main>
+        
+    
+    </body>
+    </html>
+
+
+ 

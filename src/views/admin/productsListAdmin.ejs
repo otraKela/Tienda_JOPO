@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('../partials/headAdmin.ejs') %>
+
+
+    <link rel="stylesheet" href="/css/productsListAdmin.css">
+
+
+    </head>
+
+    <body>
+
+        <%- include('../partials/headerAdmin.ejs') %>
+            <!-- <!- ---------------------- Main ---------------------------------->
+            <main>
+
+
+                <div class="div-datos-producto">
+                    <p>Filtrar por categorías</p>
+                    <form name="categoria" action="/admin/productsList/filtro/" method='post'>
+                        <select name="category" class="select-categories">
+                            <option selected value="">Todas</option>
+                            <% categories.forEach (category=> { %>
+                                <option class= "options" value="<%= category.id %>"
+                                    <%= locals.filteredCategory && locals.filteredCategory == category.id? 'selected':null %>                                           
+                                    ><%= category.name %></option>
+                                <% }) %>
+                        </select>
+
+                        <button class="button-filter" type="submit">FILTRAR</button>
+                    </form>
+                </div>
+
+
+
+                <section class="productsList">
+                    <% products.forEach((product, id)=> { %>
+                        <article class="article">
+                            <a class="product-img" href="/admin/productDetail/<%= product.id %>"><img src="<%= product.img%>"
+                                    alt="<%= product.name%>"></a>
+                            <div class="product-description">
+                                <p class="product-name"><a href="/admin/productDetail/<%= product.id %>">
+                                        <%= product.name%>
+                                    </a></p>
+                            </div>
+                            <br>
+                            <div class="button-to-detail">
+                                <a href="/admin/productDetail/<%= product.id %>">VER DETALLE</a>
+                            </div>
+                        </article>
+                        <% }); %>
+                </section>
+
+
+
+
+            </main>
+
+    </body>
+
+</html>

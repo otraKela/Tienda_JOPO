@@ -1,0 +1,64 @@
+<footer>
+  <div class="categorias">
+    <h3>Categorías</h3>
+
+    <nav>
+      <ul>
+        <% categories.forEach (category=> { %>
+          <li><a href="/products/productsList/?category=<%= category.id %>">
+              <%= (category.name).toUpperCase() %>
+            </a></li>
+          <% }) %>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="contacto">
+    <h3>Contacto</h3>
+
+    <ul>
+      <li>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:guidoymarcela@hotmail.com" target="_blank">
+          <span>grupo4@gmail.com</span>
+        </a>
+      </li>
+
+      <li>
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/5491160021531" target="_blank">
+          <span>11-1234-5678</span>
+        </a>
+      </li>
+
+      <li>
+        <i class="fa-solid fa-location-dot"></i>
+        <a href="https://maps.google.com/?ll=-34.58884772692726, -58.42807398405056" target="_blank">
+          <span>Nuestra calle 1234, 1111 CABA</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="redes-sociales">
+    <h3>Sigamos conectados</h3>
+
+    <a href="https://www.facebook.com" target="_blank">
+      <i class="fa-brands fa-facebook i-fb"></i></a>
+
+    <a href="https://www.instagram.com" target="_blank">
+      <i class="fa-brands fa-instagram i-ig"></i></a>
+
+
+    <a href="/" class="firma" style="text-decoration:none">
+      <h1>JopoStore</h1>
+    </a>
+
+  </div>
+
+  <a href="https://wa.me/5491160021531" target="_blank" aria-label="Comunicate por WhatsApp">
+    <i class="fa-brands fa-whatsapp-square i-wa"></i></a>
+
+
+</footer>

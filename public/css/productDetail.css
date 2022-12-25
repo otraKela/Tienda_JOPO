@@ -1,0 +1,237 @@
+/* -----------------------------  header  -----------------------------------------------*/
+
+/* -----------------------------  main  -----------------------------------------------*/
+main {
+    width: 100%;
+    background-image: url('../images/fondos/fondo-1.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 250px
+}
+
+.article-producto {
+    background-color: var(--blanco);
+    opacity: 0.9;
+}
+
+#p-id-producto {
+    display: none;
+}
+
+.div-img-producto {
+    width: 100%;
+}
+
+.div-img-producto img {
+    width: 100%;
+}
+
+.div-datos-producto {
+    padding: 15px;
+    border-top: 1px solid var(--gris-medio);
+    text-align: left;
+}
+
+.h4-nombre-producto {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.p-descuento,
+.p-precio {
+    font-size: 18px;
+    color: var(--naranja);
+    margin: 10px 0 0;
+}
+
+
+.p-precio span {
+    text-decoration: line-through var(--naranja) solid 2.5px;
+}
+
+.p-precio small {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.p-precio-final {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.div-formas-pago {
+    display: flex;
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.div-envio-gratis {
+    display: flex;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.i-tarjeta,
+.i-camion {
+    margin-right: 10px;
+}
+
+.div-formas-pago span,
+.div-envio-gratis span {
+    margin: 0;
+    font-size: 14px;
+}
+
+.div-formas-pago strong,
+.div-envio-gratis strong {
+    font-size: 16px;
+    color: var(--verde);
+}
+
+/* .div-comprar {
+    text-align: center;
+    padding: 10px 0;
+    box-sizing:content-box;
+} */
+
+.form-comprar {
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: content-box;
+}
+
+.button-agregar-al-carrito {
+    width: 70%;
+    height: 35px;
+    background-color: var(--marron);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 8px;
+    font-size: 13px;
+}
+
+.button-agregar-al-carrito a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--blanco);
+
+}
+
+.div-costo-envio {
+    margin: 25px 0;
+}
+
+.shipping-cost {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.shipping-cost input,
+.shipping-cost button {
+    width: 48%;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--gris-medio2);
+    border: 1px var(--gris-medio) solid;
+    border-radius: 5px;
+}
+
+.shipping-cost button {
+    background-color: var(--gris-claro);
+    text-transform: uppercase;
+}
+
+.searh-postal-code {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.searh-postal-code a {
+    text-decoration: none;
+    color: var(--verde);
+}
+
+.div-descripcion-producto {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+/* -------------------------------------------------------------------------------------*/
+/* ------------------------------   TABLET  ----------------------------------------------*/
+/* -------------------------------------------------------------------------------------*/
+
+@media (min-width:480px) {
+
+    /* ------------------------------   main  ----------------------------------------------*/
+
+    .article-producto {
+        width: 90%;
+        margin: auto;
+    }
+
+    .div-img-producto {
+        width: 70%;
+        margin: auto;
+    }
+
+    .div-datos-producto {
+        margin: auto;
+        padding: 15px 30px;
+    }
+
+    .button-agregar-al-carrito {
+        width: 50%;
+    }
+}
+
+/* -------------------------------------------------------------------------------------*/
+/* ------------------------------   LAPTOP  ----------------------------------------------*/
+/* -------------------------------------------------------------------------------------*/
+
+@media (min-width:769px) {
+
+    /* ------------------------------   main  ----------------------------------------------*/
+
+    main {
+        margin-top: 200px
+    }
+
+    .article-producto {
+        width: 70%;
+        margin: 30px 15%;
+        display: flex;
+        justify-content: space between;
+    }
+
+    .div-img-producto {
+        width: 45%;
+        padding: 40px;
+    }
+
+    .div-datos-producto {
+        width: 55%;
+        border: none;
+        padding: 40px;
+    }
+
+    .button-agregar-al-carrito {
+        width: 80%;
+        font-size: 13px;
+    }
+}
+
+@media (min-width:1000px) {
+
+    .button-agregar-al-carrito {
+        width: 60%;
+    }
+}

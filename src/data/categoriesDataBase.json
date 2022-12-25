@@ -1,0 +1,38 @@
+[
+    {
+     "id":1,
+     "name": "camaras",
+     "label": "Cámaras",
+     "img": "images/products/camaras/camara-0.jpg"
+    },
+    {
+    "id": 2,
+    "name": "televisores",
+    "label": "Televisores",
+    "img": "images/products/televisores/tv-0.jpg"
+    },
+    {
+    "id": 3,
+    "name": "vinilos",
+    "label": "Vinilos",
+    "img": "images/products/vinilos/vinilo-0.jpg"
+    },
+    {
+    "id": 4,
+    "name": "tocadiscos",
+    "label": "Tocadiscos",
+    "img": "images/products/tocadiscos/tocadiscos-00.jpg"
+    },
+    {
+    "id": 5,
+    "name": "radios",
+    "label": "Radios",
+    "img": "images/products/radios/radio-0.jpg"
+    },
+    {
+    "id": 6,
+    "name": "telefonos",
+    "label": "Teléfonos",
+    "img": "images/products/telefonos/telefono-0.jpg"
+    }
+]

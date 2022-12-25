@@ -1,0 +1,159 @@
+/*main*/
+
+main{
+    color: var(--gris-oscuro);
+    margin: 20px;    
+}
+
+h1 {
+    padding: 0;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 60px;
+    margin-left: 35px;
+}
+
+main form{
+    padding: 20px 20px 5px;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+}
+
+.form-producto {
+   text-align: left;
+   font-weight: bold;
+   opacity: 90%;
+}
+
+label,
+.colors-label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.div-datos-producto {
+    margin-top: 15px;
+}
+
+.div-datos-producto input,
+.div-datos-producto select {
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    border: 1px var(--gris-claro) solid;
+    padding: 1px 5px;
+}
+
+.div-datos-producto #description {
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    border: 1px var(--gris-claro) solid;
+    color: var(--gris-medio2);
+}
+
+.color-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.color-list label {
+    width: 30%;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.color-list input {
+    height: 10px;
+    border: 1px var(--gris-claro) solid;
+}
+
+.div-datos-producto .input-archivo {
+    padding: 3px;
+}
+
+.nombre-imagen {
+    font-weight: normal;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.div-destacado {
+    margin: 20px 0 10px;
+}
+
+.div-destacado input {
+    margin: 15px 0 0 10px;
+    width: 15px;
+}
+
+.div-botones {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.div-botones button {
+    text-align: center;
+    background-color: var(--marron);
+    color: white;
+    border:none;
+    border-radius: 5px;
+    width: 45%;
+    height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.validation-error {
+    color: var(--rojo);
+    margin: 5px 0;
+}
+
+@media (min-width:480px) {
+
+    h1 {
+        margin-left: 43px;
+    }
+
+    .div-botones button {
+        width: 30%;
+        margin: 30px;
+    }
+}
+
+
+@media (min-width:769px) {
+
+    main{
+        margin-top: -15px;
+    }
+    
+    h1 {
+        padding: 0 20% 20px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    main form{
+        width: 60%;
+    }
+
+    .div-botones button {
+        width: 20%;
+        margin: 30px;
+    }
+
+    
+}
+

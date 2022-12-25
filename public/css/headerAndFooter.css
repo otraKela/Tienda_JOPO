@@ -1,0 +1,596 @@
+/* -------------------------------------------------------------------------------------*/
+/* -------------------  CSS HEADER Y FOOTER PARA TODOS LOS FORMATOS DE PANTALLA -------*/
+/* -------------------------------------------------------------------------------------*/
+
+/* --------------------------  general  -----------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: var(--gris-medio2);
+    background-color: white
+}
+
+/* -----------------------------  header  -----------------------------------------------*/
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0
+}
+
+.header {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+input:not(:checked)~.menu-desplegable {
+    display: none;
+}
+
+input:checked~.search-bar {
+    display: none;
+}
+
+input:checked~.menu-desplegable {
+    display: block;
+    top: -30px;
+    left: -30px;
+}
+
+#check {
+    display: none;
+}
+
+#menu-closed {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.menu-desplegable {
+    position: absolute;
+    display: none;
+    background-color: var(--gris-muy-claro);
+    width: 60vw;
+    z-index: 1;
+    height: 100vh;
+    box-shadow: 0px 0px 10px var(--gris-medio);
+    padding: 10px;
+    position: fixed;
+    text-align: left;
+    margin: 30px;
+}
+
+.menu-desplegable a {
+    text-decoration: none;
+}
+
+.menu-desplegable p {
+    color: var(--gris-medio2);
+    font-size: 12px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.menu-desplegable .vertical-nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.menu-desplegable .vertical-nav-bar li {
+    list-style: none;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.menu-desplegable .vertical-nav-bar li a {
+    text-decoration: none;
+    color: var(--gris-medio2);
+    text-transform: uppercase;
+}
+
+.menu-desplegable .vertical-nav-bar ul li:hover {
+    background-color: var(--gris-claro);
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-options {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0;
+    margin: 0;
+    justify-content: flex-end;
+    color: var(--gris-medio2);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.user-options p {
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.user-options p:hover {
+    background-color: var(--gris-claro);
+}
+
+
+form select,
+button {
+    border-radius: 10px;
+    background-color: gray;
+    border-color: black;
+    border: solid 2px;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo a img {
+    width: 100%;
+}
+
+.bars-menu {
+    width: 25%;
+    margin: auto;
+    text-align: left;
+}
+
+.bars-menu i,
+.cart-shopping i,
+.icono-user i {
+    font-size: 25px;
+}
+
+.bars-menu button,
+.iconos button {
+    background-color: transparent;
+    border: none;
+}
+
+.bars-menu button i,
+.iconos button i {
+    color: var(--marron);
+}
+
+.iconos {
+    width: 25%;
+    margin: auto;
+    text-align: right;
+}
+
+.product-count {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 1%;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--gris-oscuro);
+    border: 1px solid var(--gris-oscuro);
+    border-radius: 50%;
+    background-color: var(--blanco);
+    position: absolute;
+    top: 30px;
+    right: -3px;
+}
+
+.icono-user {
+    display: none;
+}
+
+.search-bar {
+    text-align: center;
+    width: 85%;
+    margin-top: 30px;
+}
+
+.search-bar form {
+    display: flex;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 40px;
+    border: 1px var(--gris-medio) solid;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.search-bar button {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    position: absolute;
+    right: 8px;
+}
+
+.nav-bar {
+    display: none;
+}
+
+
+/* Desplegable Usuario Web */
+
+.nav-profile {
+    display: none;
+    align-items: center;
+}
+
+.user-img {
+    padding-right: 10px;
+}
+
+.user-img img {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-user {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-user ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.user-name {
+    justify-items: center;
+}
+
+.user-name .name {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(94, 62, 31)
+}
+
+.nav-user ul li a {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    padding-right: 20px;
+    text-transform: uppercase
+}
+
+.user-name i {
+    margin-left: 10px;
+    color: rgb(141, 102, 72);
+}
+
+.user-name ul {
+    align-items: center;
+}
+
+.nav-options-user {
+    display: none;
+    position: absolute;
+    background-color: var(--gris-muy-claro);
+    padding: 0px;
+    text-align: left;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.adminAccess {
+    font-weight: bold;
+
+}
+
+.nav-options-user a {
+    padding: 10px 10px;
+    font-size: 13px;
+
+}
+
+.nav-options-user a:hover {
+    background-color: rgb(237, 234, 234);
+}
+
+.user-name {
+    padding: 0px;
+}
+
+.user-name:hover .nav-options-user {
+    display: block;
+}
+
+.nav-options-user a {
+    color: var(--gris-medio2);
+    width: 100%;
+}
+
+.div-bars-nemu button:hover .nav-options-user {
+    display: block;
+}
+
+
+/* -----------------------------  footer  -----------------------------------------------*/
+
+footer {
+    background-color: var(--gris-medio2);
+    color: var(--blanco);
+    padding: 35px;
+    text-align: left;
+    font-size: 14px;
+}
+
+footer h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 15px 0;
+    list-style: none;
+}
+
+footer ul :hover {
+    color: var(--verde);
+    text-decoration: none;
+}
+
+footer li {
+    margin: 0 0 15px;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.redes-sociales a {
+    font-size: 30px;
+    color: var(--blanco);
+}
+
+.redes-sociales a :hover {
+    color: var(--verde);
+}
+
+.i-fb,
+.i-ig {
+    margin-top: 15px;
+}
+
+.i-ig {
+    margin-left: 15px;
+}
+
+.i-wa {
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 60px;
+    padding: 5px;
+    opacity: 0.8;
+    color: var(--verde-wa);
+    border-radius: 50%;
+}
+
+.firma h1{
+    font-family: 'Lobster', cursive;
+    font-size: 23px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------*/
+/* ------------------------------   TABLET  ----------------------------------------------*/
+/* ---------------------------------------------------------------------------------------*/
+@media (min-width: 480px) {
+
+    /* ------------------------------   header ----------------------------------------------*/
+
+    .search-bar {
+        width: 70%;
+    }
+
+    .search-bar form {
+        width: 100%;
+    }
+
+    .search-bar input {
+        font-size: 12px;
+    }
+
+    .search-bar button {
+        font-size: 13px;
+        right: 3px;
+    }
+
+    .product-count {
+        padding: 0.4%;
+        top: 30px;
+        right: -3px;
+    }
+
+    .menu-desplegable {
+        width: 40vw;
+    }
+}
+
+
+
+/* ---------------------------------------------------------------------------------------*/
+/* ------------------------------   LAPTOP  ----------------------------------------------*/
+/* ---------------------------------------------------------------------------------------*/
+
+@media (min-width:769px) {
+
+    /* ------------------------------   header ----------------------------------------------*/
+    .bars-menu {
+        display: none;
+    }
+
+    .icono-user {
+        display: block;
+    }
+
+    .logo {
+        width: 25%;
+        margin: 0;
+    }
+
+    .logo a {
+        margin: 0;
+    }
+
+    .logo a:hover {
+        animation-name: anim-logo-rotate;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes anim-logo-rotate {
+        50% {
+            width: 35%;
+
+        }
+
+        100% {
+            width: 25%;
+            transform: rotate(720deg);
+        }
+    }
+
+    .search-bar {
+        width: 50%;
+    }
+
+    .search-bar form {
+        width: 100%;
+    }
+
+    .iconos {
+        display: flex;
+        order: 1;
+
+        padding-left: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .iconos button {
+        text-align: right;
+        padding: 0;
+    }
+
+    .iconos button a:hover {
+        color: var(--verde);
+    }
+
+    .cart-shopping {
+        position: relative;
+        margin-right: 25px;
+        font-size: 30px;
+    }
+
+    .product-count {
+        padding: 12%;
+        top: -1px;
+        right: -10px;
+    }
+
+    .icono-user {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .nav-bar li {
+        list-style: none;
+    }
+
+    .nav-bar li a {
+        text-decoration: none;
+        color: var(--marron);
+        font-weight: bold;
+        font-size: 15px;
+        box-shadow: none;
+        transition: all 1000ms;
+    }
+
+    .nav-bar li a:hover {
+        font-size: 20px;
+        color: var(--verde);
+        box-shadow: var(--gris-medio);
+    }
+
+    .nav-profile {
+        display: flex;
+        align-content: center;
+    }
+
+    .nav-options-user {
+        width: 40%;
+        background-color: var(--gris-muy-claro);
+        font-size: 12px;
+    }
+
+    .nav-options-user ul li:hover {
+        background-color: var(--gris-claro);
+    }
+
+    @media (min-width:1000px) {
+        .iconos {
+            justify-content: flex-end;
+        }
+    }
+
+
+    /* -----------------------------  footer  -----------------------------------------------*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .categorias,
+    .contacto,
+    .redes-sociales {
+        padding: 20px 10px;
+        width: 30%;
+    }
+}

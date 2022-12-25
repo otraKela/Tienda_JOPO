@@ -1,0 +1,39 @@
+<header>
+    <div class="header">
+
+        <a href="/" class="logo"><img src="/images/logo/isologo-marron.png" alt="Logo"></a>
+
+       
+        <div class="user-data hover-area">
+            <img src="/images/users/<%= locals.isLogged.img %>"  class="user-img">
+
+            <a class="user-name">
+                <p>¡Hola <%= locals.isLogged.first_name %>!<i class="fa-solid fa-caret-down"></i></p> 
+            </a>
+           
+        </div>
+        
+
+        <div class="div-bars-menu">           
+            <button class="bars-menu-button">
+                <i class="fas fa-bars i-bars-menu"></i>
+            </button>
+        </div>
+
+        <nav class="nav-user hover-area">
+            <ul class="nav-options-user">
+                <li class="cerrar-menu"><i class="fa-solid fa-xmark i-cerrar-menu"></i></li>
+                <li><a href="/admin/findUser">Agregar administrador</a> </li>
+                <li><a href="/admin/createProduct">Agregar un producto</a> </li>
+                <li><a href="/admin/productsList">Listado de productos</a> </li>
+                <li><a href="/">Tienda</a> </li>
+                <li><a href="/users/profile/<%= locals.isLogged.id %>">Mi perfil</a> </li>
+                <li><a href="/users/logout/">Salir</a> </li>
+            </ul>
+        </nav>
+       
+    </div> 
+
+    <script src="../../../js/headerAdmin.js" type="text/javascript"></script>
+
+</header>

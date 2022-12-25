@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include ('../partials/head.ejs') %>
+ 
+    <link rel="stylesheet" href="/css/shoppingCart.css">
+    <script src="../../../js/shoppingCart.js"></script>      
+
+</head>
+
+<body>
+
+    <%- include ('../partials/header.ejs') %>
+ 
+    <!-- Main -->
+    <main>
+       
+        <div class="div-contenido-carrito">  
+
+                <!-- <div class="mensaje">
+                    <p>El carrito está vacío.</p>
+
+                    <div class="more-products">
+                        <a href="/products/productsList">Ver todos los productos</a>
+                    </div>
+                </div> -->
+
+                <section class="products">
+             <!-- html insertado desde el js -->
+                </section>
+
+                <section class="shipping">
+                    <div class="free-shipping">
+                        <button><i class="fa-solid fa-truck i-camion"></i></button>
+                        <h6>Envío gratis</h6>
+                        <p>superando los $15.000,00</p>
+                    </div>
+
+                    <form action="" method="">
+                        <div class="shipping-cost">
+                            <input type="number" name="postal-code" placeholder="Tu código postal">
+                            <button type="submit">Calcular</button>
+                        </div>
+                    </form>
+
+                    <div class="searh-postal-code">
+                        <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank">No sé mi código postal</a>
+                    </div>
+                    
+                    <div class="subtotal">
+                        <p>Subtotal (sin envío):</p>
+                        <h3 id="subtotal"></h3>
+                    </div>
+
+                    <div class="total">
+                        <h2>Total:</h2>
+                        <h2 id="total"></h2>
+                    </div>
+
+                    <div class="div-formas-pago">
+                        <i class="fa-solid fa-credit-card i-tarjeta"></i>
+                        <strong>6 cuotas sin interés de</strong> $<span id="installments"></span>
+                    </div>
+
+                    <div  class="start-the-purchase">
+                        <a class="purchase-link">
+                            <button>Iniciar Compra</button>
+                        </a>
+                    </div>
+
+                    <div class="more-products">
+                        <a href="/products/productsList">Ver más productos</a>
+                    </div>
+                </section>
+            
+        </div>   
+    </main>
+
+    <!-- Footer -->
+    <%- include ('../partials/footer.ejs') %>
+ 
+</body>
+
+</html>

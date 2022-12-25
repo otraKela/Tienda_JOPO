@@ -1,0 +1,150 @@
+<header>
+    <div class="header">
+
+        <div class="bars-menu">
+            <label id="menu-open" for="check">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+
+        <input id="check" type="checkbox">
+
+        <nav class="menu-desplegable">
+            <div class="menu-options">
+
+                <div class="nav-options">
+                    <a href="/products/productsList">
+                        <p>Todos los productos</p>
+                    </a>
+
+                    <nav class="vertical-nav-bar">
+                        <ul>
+                            <% categories.forEach (category=> { %>
+                                <li><a href="/products/productsList/?category=<%= category.id %>">
+                                        <%= (category.name).toUpperCase() %>
+                                    </a></li>
+                                <% }) %>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="user-options">
+                    <% if(!locals.isLogged) { %>
+                        <a href="/users/login">
+                            <p>Iniciar sesión</p>
+                        </a>
+                        <a href="/users/registro">
+                            <p>Registrarse</p>
+                        </a>
+                        <% } %>
+                            <% if(locals.isLogged) { %>
+                                <% if (isLogged.category_id == 1) { %>
+                                    <a class="adminAccess" href="/admin">
+                                        <p>Acceso Administrador</p>
+                                    </a> 
+                                <% } %>
+                                <a href="/users/profile/<%= locals.isLogged.id %>">
+                                    <p><%= locals.isLogged.first_name %></p>
+                                </a>
+                                <a href="/users/logout">
+                                    <p>Salir</p>
+                                </a>
+                </div>
+                <% } %>
+
+                    <label id="menu-closed" for="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+            </div>
+
+            <!-- <p>Filtrar por categorías</p> -->
+            <!-- <form name ="categoria" action="/products/productsList/filtro/" method = 'post'>
+                <select name="category">
+                    <option selected value="">Todas</option>
+                <% categories.forEach (category => { %> 
+                    <option value="<%= category.id %>"><%= category.label %></option>
+                <% }) %>
+                </select>
+
+            <button class="button-filter" type="submit" >FILTRAR</button>
+            </form> -->
+
+        </nav>
+
+        <div class="logo">
+            <a href="/"><img src="/images/logo/isologo-marron.png" alt="Logo"></a>
+        </div>
+
+
+        <div class="iconos">
+
+            <!-- Desplegable usuario web-->
+            <% if(locals.isLogged) { %>
+                <div class="nav-profile">
+                    <div class="user-img">
+                        <img src="/images/users/<%= locals.isLogged.img %>" width="40">
+                    </div>
+                    <nav class="nav-user">
+                        <ul class="user-name">
+                            <li class="name"><a> Hola
+                                    <%= locals.isLogged.first_name %><i class="fa-solid fa-caret-down"></i>
+                                </a> </li>
+                            <ul class="nav-options-user">
+                                <!-- Acceso Administrador is only available for category_id = 1 -->
+                                <% if (locals && locals.isLogged && isLogged.category_id == 1) { %>
+                                    <li class="adminAccess"><a href="/admin/">Acceso Administrador</a> </li>
+                                <% } %>
+                                <li><a href="/users/profile/<%= locals.isLogged.id %>">Mi perfil</a> </li>
+                                <li><a href="/users/logout/">Salir</a> </li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+                <% } %>
+
+                    <!--  -->
+
+                    <button class="cart-shopping">
+                        <a href="/products/shoppingCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+
+                        <p class="product-count">
+                            <!-- <%= locals.productCount %> -->
+                        </p>
+                    </button>
+
+                    <% if(!locals.isLogged) { %>
+                        <button class="icono-user">
+                            <a href="/users/login"><i class="fa-solid fa-circle-user"></i></a>
+                        </button>
+                        <% } %>
+        </div>
+
+        <input id="check" type="checkbox">
+        <div class="search-bar">
+
+            <form method="post" action="/products/search">
+
+                <input type="text" name="keyWords" id= "search-bar" placeholder="¿Qué estás buscando?">
+
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <nav class="nav-bar">
+        <ul>
+            <% categories.forEach (category=> { %>
+                <li><a href="/products/productsList/?category=<%= category.id %>">
+                        <%= (category.name).toUpperCase() %>
+                    </a></li>
+                <% }) %>
+        </ul>
+
+    </nav>
+    <script src="../../../js/header.js"></script>
+</header>

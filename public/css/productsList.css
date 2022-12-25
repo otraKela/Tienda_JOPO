@@ -1,0 +1,218 @@
+/* -----------------------------  header  -----------------------------------------------*/
+
+/* Main */
+
+main{
+   /* background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);  */
+   border-top: #4b200d solid 2px;
+   margin-top: 220px;
+}
+  
+  main .text {
+    background-color: white;
+    color: #4b200d;
+    padding: 50px 0px;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+  }
+  
+  
+  .products {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  .products article {
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .products article img {
+    width: 90%;
+  }
+  
+  .products article a {
+    text-decoration: none;
+  }
+  
+  .products .product-name {
+    height: 45px;
+    font-size: 16px;
+    margin: 0 0 10px;
+    margin-top: 15px;
+  }
+  
+  .products button a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+  }
+  
+  .product-description {
+    text-align: center;
+    margin-bottom: 3px;
+  }
+  
+  .products .price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .products .discount {
+    font-size: 14px;
+  }
+  
+  .products button {
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b200d;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  
+  .div-datos-producto {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .div-datos-producto p {
+    font-size: 20px;
+    margin: 0 0 5px;
+  }
+  
+  .div-datos-producto input {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  
+.select-categorias {
+  font-size: 18px;
+  color: var(--gris-medio2);
+  width: 40%;
+  height: 28px;
+  margin: 5px;
+  background-color: var(--gris-muy-claro);
+  border: solid var(--gris-medio) 1px;
+  border-radius: 3px;
+}
+
+.button-filter {
+  text-decoration: none;
+  color: var(--gris-medio2);
+  height: 28px;
+  font-size: 18px;
+  background-color: var(--gris-claro);
+  border: 1px var(--gris-medio) solid;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+form {
+  margin-bottom: -40px;
+}
+  
+  .product-not-found p {
+    color: red;
+  }
+  
+  .product-not-found a {
+    text-decoration: none;
+  }
+  
+
+  /*nuevo Marce*/
+
+  .products .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin:  0 0 10px;
+}
+
+.price-discount {
+    margin: 0 0 10px;
+}
+
+.products .orig-price {
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: line-through;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.products .final-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0 10px;
+}
+.products .discount {
+  font-size: 14px;
+}
+
+.cuotas {
+    margin: 0 0 10px;;
+}
+
+  
+  /* -----------------------------  footer  -----------------------------------------------*/
+  
+  @media (min-width: 480px) {
+    /* ------------------------------   main ----------------------------------------------*/
+    .products .product-name {
+      height: 45px;
+      font-size: 18px;
+    }
+    .select-categorias {
+      width: 30%;
+    }
+  }
+  
+  
+  @media (min-width: 769px) {
+    /* ------------------------------   header ----------------------------------------------*/
+  
+    /* Main */
+    main{
+      margin-top: 200px;
+    }   
+
+  .products {
+   padding: 60px;
+   margin:0px
+  }
+    .select-categorias {
+      width: 15%;
+    }
+
+    .products article {
+      width: 25%;
+    }
+  
+    /* -----------------------------  footer  -----------------------------------------------*/
+    footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .categorias,
+    .contacto,
+    .redes-sociales {
+      padding: 20px 10px;
+      width: 30%;
+    }
+  }
+  

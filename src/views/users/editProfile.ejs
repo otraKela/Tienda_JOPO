@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+        <%- include('../partials/head.ejs') %>
+        <link href="/css/registro.css", rel="stylesheet">
+    
+        
+        
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <main>
+            <form action="/users/update/profile/<%= user.id %>?_method=PUT" method="post" class="form-registro" >
+                
+                <div class="form-control-registro">
+                    <label for="first_name">Nombre:</label>
+                    <input type="text" name="first_name" id="first_name" value="<%= locals.user && user.first_name? user.first_name : '' %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                
+                <div class="form-control-registro">
+                    <label for="last_name">Apellido:</label>
+                    <input type="text" name="last_name" id="last_name"  value="<%= locals.user && user.last_name? user.last_name : '' %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+               
+                <div class="form-control-registro">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" value="<%= locals.user && user.email? user.email : '' %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                
+                <div class="form-control-registro">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel"  name="phone" id="phone"  value="<%= locals.user && user.phone? user.phone : '' %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+    
+                <button type="reset" class="delete-button">BORRAR</button>
+               
+                <div class="form-final-registro">
+                <button class="create-account">MODIFICAR DATOS</button>
+                
+                <div class="sure">
+                <p>¿Confirma los cambios?</p>
+                <button type="submit" class="accept">ACEPTAR</button>
+                <button class="cancel">CANCELAR</button>
+                </div>
+                
+                </div>
+            </form>
+
+        </main>
+        <%- include('../partials/footer.ejs') %>
+        <script src="/../../../js/dataConfirmationAlert.js" ></script>
+    </body>
+    </html>

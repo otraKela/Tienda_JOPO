@@ -1,0 +1,515 @@
+[
+ {
+  "id": 2,
+  "category": "3",
+  "name": "Vinilo 22",
+  "description": "hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci",
+  "price": 4220,
+  "discount": 0,
+  "color": "n/a",
+  "image": "/images/products/vinilos/vinilo-2.jpg"
+ },
+ {
+  "id": 3,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem",
+  "price": 4000,
+  "discount": null,
+  "color": "madera",
+  "image": "/images/products/telefonos/telefono-1.jpg",
+  "special": 1
+ },
+ {
+  "id": 4,
+  "category": "5",
+  "name": "Radio",
+  "description": "quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed",
+  "price": 2500,
+  "discount": 15,
+  "color": "madera",
+  "image": "/images/products/radios/radio-1.jpg"
+ },
+ {
+  "id": 5,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat",
+  "price": 3000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-1.jpg",
+  "special": 1
+ },
+ {
+  "id": 6,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices",
+  "price": 2500,
+  "discount": 20,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-2.jpg"
+ },
+ {
+  "id": 7,
+  "category": "1",
+  "name": "Cámara fotográfica",
+  "description": "rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi",
+  "price": 3500,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/camaras/camara-1.jpg"
+ },
+ {
+  "id": 8,
+  "category": "1",
+  "name": "Cámara fotográfica",
+  "description": "ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut",
+  "price": 2000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/camaras/camara-2.jpg"
+ },
+ {
+    "id": 10,
+    "category": "5",
+    "name": "Radio",
+    "description": "morbi vestibulum velit id pretium iaculis diam erat fermentum justo",
+    "price": "3300",
+    "discount": 20,
+    "color": "madera",
+    "image": "/images/products/radios/radio-10.jpg"
+   },
+ {
+  "id": 11,
+  "category": "2",
+  "name": "Televisor",
+  "description": "turpis enim blandit mi in porttitor pede justo eu massa donec",
+  "price": 2500,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/televisores/tv-1.jpg"
+ },
+ {
+  "id": 12,
+  "category": "5",
+  "name": "Radio",
+  "description": "nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue",
+  "price": 2000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/radios/radio-3.jpg",
+  "special": 1
+ },
+ {
+  "id": 13,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui",
+  "price": 3000,
+  "discount": 20,
+  "color": "madera",
+  "image": "/images/products/telefonos/telefono-2.jpg"
+ },
+ {
+  "id": 17,
+  "category": "3",
+  "name": "Vinilo",
+  "description": "nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec",
+  "price": 2000,
+  "discount": 0,
+  "color": "n/a",
+  "image": "/images/products/vinilos/vinilo-4.jpg"
+ },
+ {
+  "id": 18,
+  "category": "3",
+  "name": "Vinilo",
+  "description": "quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis",
+  "price": 2500,
+  "discount": 10,
+  "color": "n/a",
+  "image": "/images/products/vinilos/vinilo-5.jpg"
+ },
+ {
+  "id": 19,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas",
+  "price": 3000,
+  "discount": 0,
+  "color": "negro",
+  "image": "/images/products/telefonos/telefono-3.jpg"
+ },
+ {
+  "id": 20,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in",
+  "price": 3500,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-4.jpg"
+ },
+ {
+  "id": 21,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor",
+  "price": 2500,
+  "discount": 10,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-5.jpg"
+ },
+ {
+  "id": 22,
+  "category": "1",
+  "name": "Cámara fotográfica",
+  "description": "quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed",
+  "price": 5000,
+  "discount": 20,
+  "color": "negro",
+  "image": "/images/products/camaras/camara-4.jpg"
+ },
+ {
+  "id": 23,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium",
+  "price": 4000,
+  "discount": 20,
+  "color": "madera",
+  "image": "/images/products/telefonos/telefono-4.jpg",
+  "special": 1
+ },
+ {
+  "id": 24,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo",
+  "price": 2000,
+  "discount": 20,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-6.jpg"
+ },
+ {
+  "id": 25,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam",
+  "price": 4000,
+  "discount": 20,
+  "color": "madera",
+  "image": "/images/products/telefonos/telefono-5.jpg"
+ },
+ {
+  "id": 26,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "justo eu massa donec dapibus duis at velit eu est congue",
+  "price": 4500,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-7.jpg"
+ },
+ {
+  "id": 27,
+  "category": "3",
+  "name": "Vinilo",
+  "description": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+  "price": 5000,
+  "discount": 0,
+  "color": "n/a",
+  "image": "/images/products/vinilos/vinilo-6.jpg"
+ },
+ {
+  "id": 28,
+  "category": "1",
+  "name": "Cámara fotográfica",
+  "description": "eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper",
+  "price": 5000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/camaras/camara-5.jpg"
+ },
+ {
+  "id": 29,
+  "category": "5",
+  "name": "Radio",
+  "description": "ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus",
+  "price": 4000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/radios/radio-5.jpg"
+ },
+ {
+  "id": 30,
+  "category": "3",
+  "name": "Vinilo",
+  "description": "sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis",
+  "price": 2000,
+  "discount": 0,
+  "color": "n/a",
+  "image": "/images/products/vinilos/vinilo-7.jpg"
+ },
+ {
+  "id": 31,
+  "category": "3",
+  "name": "Vinilo",
+  "description": "lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum",
+  "price": 2000,
+  "discount": 10,
+  "color": "n/a",
+  "image": "/images/products/vinilos/vinilo-8.jpg"
+ },
+ {
+  "id": 32,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem",
+  "price": 4500,
+  "discount": 20,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-8.jpg"
+ },
+ {
+  "id": 33,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer",
+  "price": 2500,
+  "discount": 15,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-9.jpg"
+ },
+ {
+  "id": 34,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi",
+  "price": 4000,
+  "discount": 20,
+  "color": "madera",
+  "image": "/images/products/telefonos/telefono-6.jpg",
+  "special": 1
+ },
+ {
+  "id": 35,
+  "category": "5",
+  "name": "Radio",
+  "description": "volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus",
+  "price": 2500,
+  "discount": 15,
+  "color": "madera",
+  "image": "/images/products/radios/radio-6.jpg",
+  "special": 1
+ },
+ {
+  "id": 36,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing",
+  "price": 2500,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/telefonos/telefono-7.jpg"
+ },
+ {
+  "id": 37,
+  "category": "5",
+  "name": "Radio",
+  "description": "vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam",
+  "price": 4500,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/radios/radio-7.jpg",
+  "special": 1
+ },
+ {
+  "id": 38,
+  "category": "4",
+  "name": "Tocadiscos",
+  "description": "eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
+  "price": 3500,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/tocadiscos/tocadiscos-10.jpg"
+ },
+ {
+  "id": 39,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "tortor duis mattis egestas metus aenean fermentum donec ut mauris",
+  "price": 3500,
+  "discount": 0,
+  "color": "rojo",
+  "image": "/images/products/telefonos/telefono-8.jpg"
+ },
+ {
+  "id": 40,
+  "category": "5",
+  "name": "Radio",
+  "description": "consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi",
+  "price": 3500,
+  "discount": 10,
+  "color": "madera",
+  "image": "/images/products/radios/radio-8.jpg"
+ },
+ {
+  "id": 41,
+  "category": "2",
+  "name": "Televisor",
+  "description": "sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus",
+  "price": 5000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/televisores/tv-2.jpg",
+  "special": 1
+ },
+ {
+  "id": 42,
+  "category": "3",
+  "name": "Vinilo",
+  "description": "praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla",
+  "price": 2500,
+  "discount": 0,
+  "color": "n/a",
+  "image": "/images/products/vinilos/vinilo-9.jpg"
+ },
+ {
+  "id": 43,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt",
+  "price": 2000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/telefonos/telefono-9.jpg",
+  "special": 1
+ },
+ {
+  "id": 44,
+  "category": "6",
+  "name": "Teléfono",
+  "description": "porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit",
+  "price": 4000,
+  "discount": 15,
+  "color": "madera",
+  "image": "/images/products/telefonos/telefono-10.jpg"
+ },
+ {
+  "id": 45,
+  "category": "5",
+  "name": "Radio",
+  "description": "justo eu massa donec dapibus duis at velit eu est congue elementum in",
+  "price": 5000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/radios/radio-9.jpg"
+ },
+ {
+  "id": 46,
+  "category": "5",
+  "name": "Radio",
+  "description": "lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit",
+  "price": 2500,
+  "discount": 0,
+  "color": "verde",
+  "image": "/images/products/radios/radio-10.jpg"
+ },
+ {
+  "id": 47,
+  "category": "2",
+  "name": "Televisor",
+  "description": "amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum",
+  "price": 2500,
+  "discount": 10,
+  "color": "madera",
+  "image": "/images/products/televisores/tv-5.jpg"
+ },
+ {
+  "id": 48,
+  "category": "2",
+  "name": "Televisor",
+  "description": "condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique",
+  "price": 2000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/televisores/tv-3.jpg",
+  "special": 1
+ },
+ {
+  "id": 49,
+  "category": "1",
+  "name": "Cámara fotográfica",
+  "description": "velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium",
+  "price": 2500,
+  "discount": 15,
+  "color": "negro",
+  "image": "/images/products/camaras/camara-6.jpg"
+ },
+ {
+  "id": 50,
+  "category": "2",
+  "name": "Televisor",
+  "description": "rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat",
+  "price": 3000,
+  "discount": 0,
+  "color": "madera",
+  "image": "/images/products/televisores/tv-4.jpg"
+ },
+ {
+  "name": "camara de fotos Nikkon",
+  "description": "cámara de fotos de mi abuela, impecable, alta cámara!",
+  "category": "1",
+  "color": "negro",
+  "price": 1500,
+  "discount": null,
+  "id": 51,
+  "image": "/images/products/camaras/camaras-1660346278646.jpg"
+ },
+ {
+  "name": "telefono",
+  "description": "telefono con tecnologia de ultima generacion",
+  "category": "6",
+  "color": "blanco",
+  "price": 1000,
+  "discount": 0,
+  "id": 53,
+  "image": "/images/products/telefonos/telefonos-1660345891542.jpg",
+  "special": 1
+ },
+ {
+  "name": "tv moderna",
+  "description": "fdkhgfkgfkhj fgjfgh{oghpghpgjhp",
+  "category": "2",
+  "color": "blanco",
+  "price": 4000,
+  "discount": 10,
+  "id": 54,
+  "image": "/images/products/televisores/televisores-1660346035050.jpg"
+ },
+ {
+  "name": "Teléfono marca Siemens",
+  "description": "Cras commodo leo orci, ut facilisis tortor elementum id. Cras semper ipsum id diam scelerisque, ultricies imperdiet arcu sollicitudin. Cras nec ipsum vitae erat tristique lobortis a eget ante. Suspendisse tempor urna ut metus pellentesque aliquet. Nunc vulputate sollicitudin risus eget mollis. Suspe",
+  "category": "6",
+  "color": "blanco",
+  "price": 2500,
+  "discount": 0,
+  "special": 1,
+  "id": 55,
+  "image": "/images/products/telefonos/telefonos-1660939156669.jpg"
+ },
+ {
+  "name": "Radio a transistores marca Spika jdfjdjfkg gfkgfojgfgfo dfdodgoj",
+  "description": "Ideal para ir a la cancha a ver al equipo de sus amores sin perder la emoción del relato radial",
+  "category": "5",
+  "color": "rojo",
+  "price": 1000,
+  "discount": 15,
+  "special": 1,
+  "id": 56,
+  "image": "/images/products/radios/radios-1660942577766.jpg"
+ }
+]

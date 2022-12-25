@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include ('../partials/head.ejs') %>
+
+    <link href="/css/productDetail.css", rel="stylesheet">
+    <script src="../../../js/productDetail.js"></script>     
+
+</head>    
+
+<body>
+
+    <%- include ('../partials/header.ejs') %>
+    
+
+    <main>
+
+
+        <article class="article-producto">
+
+            <!-- Datos escondidos  -->
+            <p id="p-id-producto"><%= product.id %></p>
+            <!-- Fin datos escondidos  -->
+
+
+            <div class="div-img-producto">
+                <img  src="<%= product.img %>" alt="telefono-8">
+            </div>
+
+            <div class="div-datos-producto">
+
+                <h4 class="h4-nombre-producto"><%= product.name %></h4>
+
+                <% if (product.discount != 0 && product.discount != null) { %>
+
+                    <div class="div-precio-con-descuento">
+
+                        <p class="p-precio"><small>ANTES </small><span id="precio">$<%= toThousand (product.price) %></span></p>
+                        <p class="p-descuento"><%= product.discount %>% <small>de </small>DESCUENTO</p>
+                        <h5 class="p-precio-final">$<%= toThousand(product.price * (1 - product.discount / 100)) %></h5>
+
+                    </div>
+
+                <% } else { %>
+
+                    <h5 class="p-precio-final">$<%= toThousand(product.price) %></h5> 
+                    
+                <% } %>
+
+                <div class="div-formas-pago">
+
+                    <i class="fa-solid fa-credit-card i-tarjeta"></i>
+                    <span><strong>6 cuotas sin interés</strong> de $<%= toThousand((product.price / 6).toFixed(2)) %></span>
+
+                </div>
+
+
+                <!-- <form class="form-comprar" action="/products/shoppingCart/add/<%= product.id %>"     method="POST"> -->
+                <form class="form-comprar" action="/products/shoppingCart" method="GET">
+                  
+                    <button class="button-agregar-al-carrito" type="submit">AGREGAR AL CARRITO</button>
+                </form>
+
+                
+
+                <div class="div-envio-gratis">
+
+                    <i class="fa-solid fa-truck i-camion"></i>
+
+                    <span><strong>Envío gratis</strong> superando los $15.000,00</span>
+
+                </div>
+
+                <form action="" method="">
+
+                    <div class="shipping-cost">
+                        <input type="number" name="postal-code" placeholder="Tu código postal">
+
+                        <button type="submit">Calcular</button>
+                    </div>
+
+                </form>
+            
+                <div class="searh-postal-code">
+
+                    <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank">No sé mi código postal</a>
+                 </div>
+
+                <div id="p-descripcion" class="div-descripcion-producto">
+
+                    <p><%= product.description%></p>
+
+
+                </div>
+            </div> 
+        </article>
+    
+    </main>
+
+    <%- include ('../partials/footer.ejs') %>
+   
+
+</body>
+</html>

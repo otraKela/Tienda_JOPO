@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+    background-blend-mode: screen;
+}
+
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #343434;
+}
+
+.container h2 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.container h1 {
+    font-size: 120px;
+    margin: 0;
+    margin-top: 0px;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.container a {
+    text-decoration: none;
+    background: #8d6707;
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.container a:hover {
+    background: #cf8312;
+}
+
+.container p {
+    margin-bottom: 45px;
+    font-size: 30px;
+}
+
+.container img {
+    width: 55%;
+}
+ 
+
+@media (min-width:700px){
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 30%;
+        text-align: center;
+    }
+
+    .container img {
+        width: 60%;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    .container h1 {
+        font-size: 60px;
+        letter-spacing: 3px;
+    }
+
+    .container p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container a {
+        font-size: 14px;
+    }
+
+}

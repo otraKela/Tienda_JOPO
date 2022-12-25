@@ -1,0 +1,17 @@
+:root {
+    --marron: #4b200d;
+    --marron2: #2f1408;
+    --amarillo: #d4a708;
+    --verde: #B09900;
+    --naranja:rgb(208, 80, 33); 
+    --gris-claro: #d8d2d0;
+    --gris-medio: #807e7e;
+    --gris-medio2:#3f3e3e;
+    --gris-oscuro: #666;
+    --gris-muy-claro: rgb(245, 242, 242);
+    --beige-claro: #f6f2ba;
+    --blanco: white;
+    --negro: black;
+    --verde-wa: #00bb2d;
+    --rojo: red;
+}

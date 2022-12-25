@@ -1,0 +1,97 @@
+[
+ {
+  "id": 4,
+  "first_name": "Josselyn",
+  "last_name": "Castello",
+  "email": "jcastello0@jimdo.com",
+  "phone": "179-792-0730",
+  "password": "0U5996X5Pkd",
+  "dateBirth": "3/3/2022"
+ },
+ {
+  "id": 5,
+  "first_name": "Ephrem",
+  "last_name": "Reiglar",
+  "email": "ereiglar1@ask.com",
+  "phone": "148-952-5317",
+  "password": "5Ns1cn",
+  "dateBirth": "2/10/2021"
+ },
+ {
+  "id": 6,
+  "first_name": "Clarabelle",
+  "last_name": "Hammill",
+  "email": "chammill2@msu.edu",
+  "phone": "359-264-0524",
+  "password": "z4Bu4Zh3dHG",
+  "dateBirth": "24/3/2022"
+ },
+ {
+  "id": 7,
+  "first_name": "Maryrose",
+  "last_name": "Templar",
+  "email": "mtemplar3@1688.com",
+  "phone": "637-420-9121",
+  "password": "o0qxz9uHEY",
+  "dateBirth": "10/1/2022"
+ },
+ {
+  "id": 8,
+  "first_name": "Mavra",
+  "last_name": "Paddle",
+  "email": "mpaddle4@nature.com",
+  "phone": "323-408-6729",
+  "password": "JYvbSVa",
+  "dateBirth": "18/6/2022",
+  "category_id": 2
+ },
+ {
+  "first_name": "Marcela",
+  "last_name": "Bustamante",
+  "email": "marcela@gmail.com",
+  "phone": "22223456",
+  "password": "$2a$10$8Fmc7X4v.X3VVji1KC7yxe4bbTlTfkk7c1r6uj1BMXnuaCFRn3GP6",
+  "img": "lola.png",
+  "id": 10,
+  "category_id": 1
+ },
+ {
+  "first_name": "Paula ",
+  "last_name": "Pilo",
+  "email": "paupilo@gmail.com",
+  "phone": "1134568291",
+  "password": "$2a$10$MTXyCaJ5pSweMLNre0HkcOQGnlLD39cEUny2PR5Zxk2zcIrfcaGxK",
+  "img": "1661727739809.jpg",
+  "id": 11,
+  "category_id": 2
+ },
+ {
+  "first_name": "Cecilia",
+  "last_name": "Lafuente",
+  "email": "lafuentececilia@hotmail.com",
+  "phone": "1134165282",
+  "password": "$2a$10$zJSTNbPxnNuatPPRLWKMw.htj9rTV20c6e0/cZugf2Qvw1c5NYP/2",
+  "img": "1661884973144.jpg",
+  "id": 12,
+  "category_id": 1
+ },
+ {
+  "first_name": "Leonel ",
+  "last_name": "Mariani",
+  "email": "leomariani_1@hotmail.com",
+  "phone": "1151505487",
+  "password": "$2a$10$kWv5eAamYti9tLDwMKI0R.3vLNBEN1EiNQ7ML3kJxO9fJRWlHEiTi",
+  "img": "1663297124270.jpg",
+  "id": 13,
+  "category_id": 1
+ },
+ {
+  "first_name": "Marcela",
+  "last_name": "Bustamante",
+  "email": "marcelabus@gmail.com",
+  "phone": "1160021531",
+  "password": "$2a$10$8Fmc7X4v.X3VVji1KC7yxe4bbTlTfkk7c1r6uj1BMXnuaCFRn3GP6",
+  "img": "1664050521471.png",
+  "id": 14
+ }
+]

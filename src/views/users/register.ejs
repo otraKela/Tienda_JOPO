@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+        <%- include('../partials/head.ejs') %>
+        <link href="/css/registro.css", rel="stylesheet">
+    
+        
+        
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <main>
+            <form action="/users/new/register" method="POST" class="form-registro" enctype="multipart/form-data">
+                
+                <div class="form-control-registro">
+                    <label for="first_name">Nombre</label>
+                    <input type="text" name="first_name" id="first_name" value="<%= locals.old && old.first_name? old.first_name : '' %>" class="<%= locals.errors && errors.first_name? '': locals.check %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div class="<%= locals.errors && errors.first_name? locals.wrong :'' %>"></div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <p class="name-error"></p>
+                </div>
+                <% if(locals.errors && errors.first_name){ %>
+                    <p><%= errors.first_name.msg %></p>
+                <% }; %>
+                <div class="form-control-registro">
+                    <label for="last_name">Apellido</label>
+                    <input type="text" name="last_name" id="last_name"  value="<%= locals.old && old.last_name? old.last_name : '' %>" class="<%= locals.errors && errors.last_name? '': locals.check %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div class="<%= locals.errors && errors.last_name? locals.wrong :'' %>"></div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <p class="lastName-error"></p>
+                   
+                </div>
+                <% if(locals.errors && errors.last_name){ %>
+                    <p><%= errors.last_name.msg %></p>
+                <% }; %>
+               
+                <div class="form-control-registro">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" value="<%= locals.old && old.email? old.email : '' %>" class="<%=  locals.errors && errors.email || locals.userExist ? '': locals.check %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div class="<%= locals.errors && errors.email || locals.userExist ? locals.wrong :'' %>"></div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <p class="email-error"></p>
+                </div>
+                <% if(locals.errors && errors.email){ %>
+                    <p><%= errors.email.msg %></p>
+                <% }; %>
+                <div class="user-exist">
+                <% if(locals.userExist){ %>
+                    <p><%= locals.userExist %></p>
+                 <% } %>
+                </div>
+               
+                <div class="form-control-registro">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel"  name="phone" id="phone"  value="<%= locals.old && old.phone? old.phone : '' %>" class="<%=  locals.errors && errors.phone? '': locals.check %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div class="<%= locals.errors && errors.phone? locals.wrong :'' %>"></div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <p class="phone-error"></p>
+                </div>
+                <% if(locals.errors && errors.phone){ %>
+                    <p><%= errors.phone.msg %></p>
+                <% }; %>
+                <div class="form-control-registro">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" value="<%= locals.old && old.password? old.password : '' %>" class="<%=  locals.errors && errors.password? '': locals.check %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div class="<%= locals.errors && errors.password? locals.wrong :'' %>"></div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <p class="password-error"></p>
+                    <p class="differentsPasswords"></p>
+                </div>
+                <% if(locals.errors && errors.password){ %>
+                    <p><%= errors.password.msg %></p>
+                <% }; %>
+
+                <div class="form-control-registro">
+                    <label for="confirmPassword">Contraseña</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" value="<%= locals.old && old.confirmPassword? old.confirmPassword : '' %>" class="<%=  locals.errors && errors.password? '': locals.check %>">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div class="<%= locals.errors && errors.password? locals.wrong :'' %>"></div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <p class="confirmPassword-error"></p>
+                    <p class="differentsPasswords"></p>
+                </div>
+                <% if(locals.errors && errors.password){ %>
+                    <p><%= errors.password.msg %></p>
+                <% }; %>
+             
+
+                <div class="form-control-registro">
+                    <label>Subir foto</label>
+                    <input type="file" name="image" id="image">
+                    <p class="image-error"></p>
+                </div>
+                <% if(locals.error){ %>
+                   <p><%= error %></p>
+                <% } %>
+                
+                <!-- <div class="form-control-birtday">
+                    <p>¿Querés recibir promociones por tu cumpleaños?(Opcional)</p>
+                    <label>Fecha de nacimiento:</label>
+                    <input type="date" name="nacimiento">
+                </div> -->
+                
+                <button type="reset" class="delete-button">BORRAR</button>
+               
+                <div class="form-final-registro">
+                <button type="submit" class="create-account">CREAR CUENTA</button>
+                
+                <p style="color:rgb(49, 46, 46)">¿Ya tenés una cuenta?</p><a href="/users/login">Iniciá sesión</a>
+                </div>
+            </form>
+        </main>
+        <%- include('../partials/footer.ejs') %>
+      
+        <script src="../../../js/registerValidation.js" ></script>
+    </body>
+    </html>
+
+
+ 

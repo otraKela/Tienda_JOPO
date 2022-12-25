@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+    <link href="/css/profile.css" , rel="stylesheet">
+
+    <script src="../../../js/profile.js"></script>
+
+    </head>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+            <main>
+                <input class="mensaje" value="<%= locals.msg? locals.msg:null %>">
+
+                <div class="user">
+                    <div class="userImg">
+                        <img src="<%=user.img%>">
+                    </div>
+
+                    <div class="userData">
+                        <p><strong>
+                                <%=user.first_name%>
+                                    <%=user.last_name%>
+                            </strong></p>
+                        <p>
+                            <%=user.email%>
+                        </p>
+                        <p>
+                            <%=user.phone%>
+                        </p>
+
+                    </div>
+
+                    <form action="/users/profile/<%= user.id %>?_method=PUT" method="post" enctype="multipart/form-data"
+                        class="change-image">
+                        <label for="image" class="modify-img">Cambiar imagen</label>
+                        <input type="file" name="image" class="input-img">
+
+                        <button type="submit" class="button-img">Guardar Imágen</button>
+                        <% if(locals.error){ %>
+                            <p class="changeImg-error" style="color:red">
+                                <%= error %>
+                            </p>
+                            <% } %>
+
+                                <p class="changeImg-empty" style="color:red">No seleccionaste ninguna imágen</p>
+
+                    </form>
+
+
+                </div>
+
+                <div class="buttons">
+                    <form action="/users/update/profile/password/<%= user.id %>" method="get">
+                        <div class="button">
+                            <button type="submit">Modificar contraseña</button>
+                        </div>
+                    </form>
+
+                    <form action="/users/editProfile/<%= user.id %>" method="post">
+                        <div class="button">
+
+                            <button type="submit">Modificar datos</button>
+
+                        </div>
+                </div>
+                </form>
+
+
+
+
+
+            </main>
+            <%- include('../partials/footer.ejs') %>
+
+    </body>
+
+</html>

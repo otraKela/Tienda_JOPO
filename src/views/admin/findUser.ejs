@@ -1,0 +1,43 @@
+
+
+    <!DOCTYPE html>
+<html>
+        <%- include ('../partials/headAdmin.ejs') %>
+    
+        <link href="/css/productAdmin.css", rel="stylesheet">
+        
+    
+    </head>
+
+    <body>
+
+        <%- include ('../partials/headerAdmin.ejs') %>
+
+        <main>
+            <h1>Buscar usuario por email: </h1>
+
+            <form action="/admin/createAdmin" method="POST" class="form-producto">
+
+                <div class="div-datos-producto">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" value="<%= locals.old && old.email? old.email :'' %>">
+                </div>
+
+                <button type="submit">Buscar</button>
+                                   
+            </form>
+
+            <% if(locals.notFound){ %>
+                <p style="color:red"><%= notFound %></p>
+            <% } %>
+
+
+        </main>
+
+    
+    
+    </body>
+    </html>
+
+
+ 

@@ -59,4 +59,4 @@ app.listen(process.env.PORT || 3040, () => {
     console.log("Servidor corriendo en el puerto 3040");
 })
 
-
+module.exports = app;

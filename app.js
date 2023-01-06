@@ -55,8 +55,11 @@ app.use((req, res, next) =>{
     res.status(404).render("notFound")
 })
 
-app.listen(process.env.PORT || 3040, () => {
-    console.log("Servidor corriendo en el puerto 3040");
+const port = process.env.PORT || 3001;
+app.listen(port, () => {
+    console.log(`Servidor corriendo en el puerto ${port}`);
 })
 
-module.exports = app;
+
+
+

@@ -4,7 +4,7 @@
   "description": "Tienda de objetos vintage de los años 70 y 80.\r     La audiencia será coleccionistas, dueños de locales que buscan estos objetos para decorar, escenógrafos.\r     Es una tienda online de objetos de colección que vende sus productos a través de su página.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -64,7 +64,7 @@ const controller = {
 
         db.Product_Categories.findAll()
             .then( categories => {
-                 return res.render('./products/purchaseFinalized', { categories });
+                 return res.render('products/purchaseFinalized', { categories });
              })
              .catch(function (error) {
                  console.log(error);
@@ -75,7 +75,7 @@ const controller = {
 
        db.Product_Categories.findAll()
            .then( categories => {
-                return res.render('./products/shoppingCart', { categories });
+                return res.render('products/shoppingCart', { categories });
             })
             .catch(function (error) {
                 console.log(error);
@@ -89,7 +89,7 @@ const controller = {
         ])
             .then(function ([categorias, product]) {
 
-                return res.render('./products/productDetail', { product, categories: categorias, toThousand });
+                return res.render('products/productDetail', { product, categories: categorias, toThousand });
             })
             .catch(function (error){
                 console.log(error)

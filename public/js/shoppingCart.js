@@ -33,7 +33,8 @@ window.addEventListener('load', async () => {
         // busco los productos del carro en la BD y los pongo en el array cartProducts
         let cartProducts = await Promise.all(
             cartArray.map(async item => {
-                const data = await fetch('http://localhost:3040/api/products/' + item);
+                // const data = await fetch('http://localhost:3040/api/products/' + item);
+                const data = await fetch('https://tienda-jopo-mb.onrender.com/api/products/' + item);
                 return data.json();
             }))
 

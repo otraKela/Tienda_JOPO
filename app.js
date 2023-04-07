@@ -4,9 +4,12 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const cors = require ('cors');
-//const productCountMiddleware = require('./middlewares/productCountMiddleware');
+
 const cookieMiddleware = require('./middlewares/cookieMiddleware');
 
+require('dotenv').config();
+
+console.log('process.env', process.env);
 
 const app = express();
 
